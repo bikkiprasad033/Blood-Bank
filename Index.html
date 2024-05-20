@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= 1000, initial-scale=1.0">
+    <title>BloodBond</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container1" >
+        <nav class="navcontainer">
+            <ul id="navlist">
+                <li>
+                    <div id="abouthome" >
+                        <a href="#search" class="navitems">home</a>
+                        <a href="#" class="navitems">About us</a>
+                        <a href="#" class="navitems">Contact us</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+
+<div class="container2">
+
+  <div class="box1">
+  </div>
+
+  <div class="box2">
+    <P> <b>Donors Registered</b></P>
+  </div> 
+
+</div>
+
+<div class="container3">
+
+
+  <div class="wrapper" id="search">
+    <form action="">
+      <h2>Search for Blood Donors</h2>
+      
+      <div class="inputbox">
+        <label for="bloodgroup">Blood Group : </label>
+          <select name="" id="bloodgroup">
+            <option value="select"> --select--</option>
+            <option value="select"> A+ </option>
+            <option value="select"> A- </option>
+            <option value="select"> AB+ </option>
+            <option value="select"> AB- </option>
+            <option value="select"> B+ </option>
+            <option value="select"> B- </option>
+            <option value="select"> O+ </option>
+            <option value="select"> O- </option>
+          </select>
+      </div>
+
+      <button type="submit" class="btn"> Search </button>
+
+      <div class="register">
+        <label > New User? </label>
+        <a href="#con"> Register Here </a>
+      </div>
+      
+    </form>
+
+  </div>
+
+</div>
+
+<div class="container4" id="con">
+
+  <div class="wrapper2">
+    <form action="connect.php" method="post"> <!-- connecting to database  -->
+      <h2>Register as Blood Donors</h2>
+      
+      <div class="inputbox">
+        <label for="firstname">First Name : </label>
+          <input type="text" id="firstname" name="firstname">
+          <br><br>
+        <label for="lastname">Last Name :</label>
+          <input type="text" id="lastname" name="lastname"> 
+          <br><br>
+
+        <label for="phone">phone Number :</label>
+          <input type="tel" id="phone" name="number">
+          <br><br>
+
+        <label for="dept">Department :</label>
+          <input type="text" form="dept" name="department">
+        <br><br>
+
+        <label for="year">Current Year :</label>
+          <select name="" id="year" name="year">
+            <option value="">select</option>
+            <option value="1st Year"> 1st year</option>
+            <option value="2nd Year"> 2nd year</option>
+            <option value="3rd Year"> 3rd year</option>
+            <option value="4th Year"> 4th year</option>
+          </select>
+          <br><br>
+
+        <label for="bloodgroup">Blood Group : </label>
+          <select name="" id="bloodgroup" name="bloodgroup">
+            <option value="select"> --select--</option>
+            <option value="A+"> A+ </option>
+            <option value="A-"> A- </option>
+            <option value="AB+"> AB+ </option>
+            <option value="AB-"> AB- </option>
+            <option value="B+"> B+ </option>
+            <option value="B-"> B- </option>
+            <option value="O+"> O+ </option>
+            <option value="O-"> O- </option>
+          </select>
+          
+      </div>
+
+      <button type="submit" class="btn"> Register </button>
+      
+    </form>
+
+  </div>
+</div>
+
+</body>
+</html>
